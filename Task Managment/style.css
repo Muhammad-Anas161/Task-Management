@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0 10px;
+}
+h1.title {
+  font-size: 64px;
+  color: #61481c;
+  text-align: center;
+}
+.main-container {
+  padding: 10px 42px;
+  background: rgba(251, 251, 251, 1);
+  box-shadow: 0 0 8px 1px #0000001a;
+  max-width: 660px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+h1.title span {
+  color: #48a300;
+}
+h2.sub-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  height: 54px;
+}
+
+.sun-image {
+  position: relative;
+  z-index: 1;
+  animation: rotate 5s linear infinite;
+}
+
+.group-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+p.progress-label {
+  margin-bottom: 18px;
+}
+
+.progress-value {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #49a300;
+  transition: width .5s ease-in;
+}
+.progress-value .tasks-completed{
+  padding-left: 20px;
+  min-width: max-content;
+  /* visibility: hidden; */
+  overflow: hidden;
+}
+.progress-bar {
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(72, 163, 0, 0.1);
+  box-shadow: 0 0 8px 1px #0000002c;
+  margin: 0 0 30px 0; 
+}
+
+p.error-label{
+  color: red;
+  display: none;
+}
+.show-error .error-label{
+  display: block;
+}
+.input-container {
+  /* width: 570px; */
+  height: 82px;
+  padding: 0 20px;
+  display: flex;
+  /* justify-content: left; */
+  align-items: center;
+  /* gap: 30px; */
+  background-color: #fff;
+  /* gap: 0px; */
+  border-radius: 17px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.input-container .input {
+  /* width: 364px;
+  height: 28px; */
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  /* text-align: left; */
+  border: none;
+  padding-left: 15px;
+  color: #000000;
+  align-self: stretch;
+  /* background-color: #48a300; */
+  /* flex-grow: 1; */
+  width: 100%;
+}
+
+.input-container .custom-checkbox {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border: 2px solid #61481c4d;
+  /* text-align: left; */
+  /* align-self: start; */
+  /* justify-self: start; */
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.custom-checkbox .check-icon{
+  display: none;
+}
+
+.completed .custom-checkbox{
+  background-color: #48a300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed .check-icon{
+  display: block;
+}
+
+.completed .input{
+  color: #48a300;
+  text-decoration: line-through;
+}
+
+p.quote{
+  font-weight: 500;
+  text-align: center;
+}
+p.copyright{
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  h1.title{
+    font-size: 32px;
+  }
+  h2.sub-title{
+    font-size: 22px;
+  }
+  .input-container {
+  margin-bottom: 20px;
+  }
+  p.copyright{
+    margin-top: 32px;
+  }
+  .progress-bar{
+    height: 24px;
+  }
+  .progress-value{
+    font-size: 12px;
+  }
+}

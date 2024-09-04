@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus On Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+    <h1 class="title"><span>Focus On</span> Today</h1>
+    <div class="main-container">
+      <h2 class="sub-title">
+        <span>Today</span>
+        <div class="image-container">
+          <img src="./images/🦆 icon _Sun_.svg" alt="" class="sun-image" />
+          <img src="./images/Group 3.svg" alt="" class="group-image" />
+        </div>
+      </h2>
+      <p class="progress-label">Raise the bar by completing your goals!</p>
+      <div class="progress-bar">
+        <div class="progress-value"><span class="tasks-completed"></span></div>
+        <p class="error-label">Please set all the 3 goals!</p>
+      </div>
+      <div class="Tasks-container">
+        <div class="input-container">
+          <div class="custom-checkbox">
+            <img class="check-icon" src="./images/Vector 1.svg" alt="" />
+          </div>
+          <input class="input" id="Task1" type="text" placeholder="Add new goal..." />
+        </div>
+        <div class="input-container">
+          <div class="custom-checkbox">
+            <img class="check-icon" src="./images/Vector 1.svg" alt="" />
+          </div>
+          <input
+            id="Task2"
+            class="input"
+            type="text"
+            placeholder="Add new goal..."
+          />
+        </div>
+        <div class="input-container">
+          <div class="custom-checkbox">
+            <img class="check-icon" src="./images/Vector 1.svg" alt="" />
+          </div>
+          <input
+            class="input"
+            id="Task3"
+            type="text"
+            placeholder="Add new goal..."
+          />
+        </div>
+      </div>
+      <div class="add-task">+</div>
+      <p class="quote">“Move one step ahead, today!”</p>
+      <p class="copyright">This project is created by Muhammad Anas</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
